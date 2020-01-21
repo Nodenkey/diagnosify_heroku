@@ -1,0 +1,46 @@
+body,html {
+    margin: 0;
+    height: 100%;
+    font-family: sans-serif;
+  }
+  
+  .hero-image {
+    background-image: url("../../images/mount.jpg");
+    background-color: #cccccc;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+  }
+  
+  .hero-div {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 50%;
+    padding: 20px 0;
+    margin: 20px 0;
+    text-align: center;
+  }
+  .pred{
+      height: 60px;
+      width: 60px;
+  }
+  .preview>div>img{
+      width: 300px;
+  }
+  .select{
+    padding: 4px;
+    border: 2px white solid;
+    border-radius: 7px;
+  }

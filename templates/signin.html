@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../static/assets/theme/css/signup.css">
+    <title>Sign In</title>
+</head>
+
+<body>
+    <div id="background_signin">
+    </div>
+    <div class="loginBox" style="height: 350px; background-color: rgba(0, 0, 0, 0.7)">
+        <h2 style="margin-top: 30px;">Sign In</h2>
+        <img src="../static/assets/images/key.png" alt="key image" class="lock" style="padding-top: 15px;">
+        <form action="POST" novalidate enctype="multipart/form-data" class="myForm">
+            <p>Username</p>
+            <input type="text" name="username" id="username" >
+            <p>Password</p>
+            <input type="password" name="password" id="password" >
+            <input type="submit" name="submit" id="submit" value="Sign In">
+            <a href="/signUp">Don't have an account? Sign up</a>
+            <!-- TODO: validation -->
+        </form>
+    </div>
+</body>
+
+</html>

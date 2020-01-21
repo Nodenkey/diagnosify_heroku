@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../static/assets/theme/css/signup.css">
+    <title>Sign Up</title>
+</head>
+
+<body>
+    <div id="heroImage">
+    </div>
+    <div class="loginBox">
+        <h2>Sign Up</h2>
+        <img src="../static/assets/images/lock.png" alt="lock image" class="lock">
+        <form action="POST" novalidate enctype="multipart/form-data">
+            <p>First name</p>
+            <input type="text" name="firstname" id="firstname" >
+            <p>Last name</p>
+            <input type="text" name="lastname" id="lastname" >
+            <p>Username</p>
+            <input type="text" name="username" id="username" >
+            <p>Email</p>
+            <input type="email" name="mail" id="mail" >
+            <p>Password</p>
+            <input type="password" name="password" id="password" >
+            <p>Confirm Password</p>
+            <input type="password" name="cpass" id="cpass" >
+            <input type="submit" name="submit" id="submit" value="Sign Up">
+            <a href="/signin">Already have an account? Login</a>
+            <!-- TODO: validation -->
+        </form>
+    </div>
+</body>
+
+</html>
