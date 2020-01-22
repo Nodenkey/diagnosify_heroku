@@ -7,8 +7,8 @@ from keras.models import load_model
 from keras.preprocessing import image
 import numpy as np
 
-APP_ROOT = os.path.dirname(os.path.abspath(__file__))
 app = Flask(__name__)
+APP_ROOT = os.path.dirname(os.path.abspath(__file__))
 def top_3_accuracy(y_true, y_pred):
     return top_k_categorical_accuracy(y_true, y_pred, k=2)
 
