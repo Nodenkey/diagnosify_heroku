@@ -29,8 +29,8 @@ function updateImageDisplay() {
         para.textContent = 'File name: ' + curFiles[i].name + ', file size: ' + returnFileSize(curFiles[i].size) + '.';
         var image = document.createElement('img');
         image.src = window.URL.createObjectURL(curFiles[i]);
-        image.width = 300;
-        image.height = 300;
+        image.width = 200;
+        image.height = 170;
         para1.appendChild(image);
 
         descr.appendChild(para1);

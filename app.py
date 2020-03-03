@@ -80,30 +80,30 @@ def predict():
         elif encoded_result[0] == "df":
             output = "Dermatofibroma"
             info = """Dermatofibrosarcoma protuberans (DFSP) is a very rare type of skin cancer that begins in
-             connective tissue cells in the middle layer of your skin (dermis).Dermatofibrosarcoma 
-             protuberans may at first appear as a bruise or scar. As it grows, lumps of tissue 
+             connective tissue cells in the middle layer of your skin (dermis). Dermatofibrosarcoma
+             protuberans may at first appear as a bruise or scar. As it grows, lumps of tissue
              (protuberans) may form near the surface of the skin."""
             ref = "https://www.mayoclinic.org/diseases-conditions/dermatofibrosarcoma-protuberans/cdc-20352949"
         elif encoded_result[0] == "nv":
             output = "Melanocytic nevi"
-            info = """ Melanocytic nevi are benign neoplasms or hamartomas composed of melanocytes, 
-            the pigment-producing cells that constitutively colonize the epidermis. 
-            Melanocytes are derived from the neural crest and migrate during embryogenesis to selected 
+            info = """ Melanocytic nevi are benign neoplasms or hamartomas composed of melanocytes,
+            the pigment-producing cells that constitutively colonize the epidermis.
+            Melanocytes are derived from the neural crest and migrate during embryogenesis to selected
             ectodermal sites (primarily the skin and the CNS), but also to the eyes and the ears."""
             ref = "https://emedicine.medscape.com/article/1058445-overview"
         elif encoded_result[0] == "mel":
             output = "Melanoma"
-            info = """Melanoma, the most serious type of skin cancer, develops in the cells (melanocytes) 
-            that produce melanin — the pigment that gives your skin its color. Melanoma can also form in 
+            info = """Melanoma, the most serious type of skin cancer, develops in the cells (melanocytes)
+            that produce melanin — the pigment that gives your skin its color. Melanoma can also form in
             your eyes and, rarely, in internal organs, such as your intestines."""
             ref = "https://www.mayoclinic.org/diseases-conditions/melanoma/symptoms-causes/syc-20374884"
         elif encoded_result[0] == "vasc":
             output = "Vascular skin lesions"
-            info = """Vascular lesions are relatively common abnormalities of the skin and underlying 
-            tissues, more commonly known as birthmarks. There are three major categories of vascular 
+            info = """Vascular lesions are relatively common abnormalities of the skin and underlying
+            tissues, more commonly known as birthmarks. There are three major categories of vascular
             lesions: Hemangiomas, Vascular Malformations, and Pyogenic Granulomas."""
             info = "https://www.ssmhealth.com/cardinal-glennon/pediatric-plastic-reconstructive-surgery/hemangiomas"
-        else: 
+        else:
             output = "No result"
             info = "Get more info at "
             ref = "https://www.healthline.com/health/skin-disorders"
@@ -116,6 +116,6 @@ def signUp():
 @app.route('/signin')
 def signin():
     return render_template('signin.html')
-    
+
 if __name__ == '__main__':
-    app.run()
+    app.run(port=4555, debug=True)

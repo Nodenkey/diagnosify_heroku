@@ -3,30 +3,120 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Scan</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="Mobirise v4.11.5, mobirise.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link rel="shortcut icon" href="assets/images/Logo_main.png" type="image/x-icon">
+    <meta name="description" content="">
+
+    <title>Diagnosify - Scan your image and get immediate diagnosis from our expert database.</title>
+    <link rel="stylesheet" href="../static/assets/web/assets/mobirise-icons/mobirise-icons.css">
+    <link rel="stylesheet" href="../static/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/assets/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../static/assets/bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="../static/assets/socicon/css/styles.css">
+    <link rel="stylesheet" href="../static/assets/dropdown/css/style.css">
+    <link rel="stylesheet" href="../static/assets/tether/tether.min.css">
+    <link rel="stylesheet" href="../static/assets/theme/css/style.css">
+    <link rel="preload" as="style" href="../static/assets/mobirise/css/mbr-additional.css">
+    <link rel="stylesheet" href="../static/assets/mobirise/css/mbr-additional.css" type="text/css">
     <link rel="stylesheet" href="../static/assets/theme/css/stylescan.css">
+
 </head>
 
 <body>
-    <div class="hero-image">
-    </div>
-    <div class="hero-div">
-        <h1>Diagnose with Diagnosify</h1>
-        <form action="{{url_for('predict')}}" novalidate onsubmit="return validate()" method="POST" enctype="multipart/form-data">
-            <label for="scanImage" class="select">Choose an Image</label><br>
-            <input type="file" id="scanImage" name="scanImage" accept="image/*"><br>
-            <div class="preview">
-                <div>
-                    <img src="../static/assets/images/placeholder.png" alt="image placeholder">
-                    <p>No files currently selected for prediction</p>
-                </div>
-            </div><br>
-            <input type="image" src="../static/assets/images/dermatology.png" class="pred" id="predict"><br>
-            <label for="predict">Predict</label>
-        </form>
-    </div>
-</body>
+<section class="menu cid-rIyUV0oquf" once="menu" id="menu1-0">
+    <nav
+            class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </button>
+        <div class="menu-logo">
+            <div class="navbar-brand">
+
+                    <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-5" href="#">
+                            diAgnosIfy</a></span>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true">
+                <li class="nav-item dropdown">
+                    <a class="nav-link link text-white dropdown-toggle display-4" href="#"
+                       data-toggle="dropdown-submenu" aria-expanded="true">
+                        <span class="mbri-home mbr-iconfont mbr-iconfont-btn"></span>
+                        Services
+                    </a>
+                    <div class="dropdown-menu"><a class="text-white dropdown-item display-4" href="/diagnose">Scan
+                        Images</a><a class="text-white dropdown-item display-4" href="#"
+                                     aria-expanded="false">Get Mobile App</a></div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link text-white display-4" href="index.html#counters1-2">
+                        <span class="mbri-search mbr-iconfont mbr-iconfont-btn"></span>
+                        About Us
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link text-white display-4" href="/signin">
+                        <span class="mbri-arrow-next mbr-iconfont mbr-iconfont-btn"></span>
+                        Sign In
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</section>
+<div class="hero-image">
+</div>
+<div class="hero-div">
+    <h1>Diagnose with Diagnosify</h1>
+    <form action="{{url_for('predict')}}" novalidate onsubmit="return validate()" method="POST"
+          enctype="multipart/form-data">
+        <label for="scanImage" class="select">Choose an Image</label><br>
+        <input type="file" id="scanImage" name="scanImage" accept="image/*"><br>
+        <div class="preview">
+            <div>
+                <img src="../static/assets/images/placeholder.png" alt="image placeholder">
+                <p>No files currently selected for prediction</p>
+            </div>
+        </div><br>
+        <input type="image" src="../static/assets/images/dermatology.png" class="pred" id="predict"><br>
+        <label for="predict">Predict</label>
+    </form>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 <script src="../static/assets/theme/js/scan.js"></script>
+<script src="../static/assets/web/assets/jquery/jquery.min.js"></script>
+<script src="../static/assets/popper/popper.min.js"></script>
+<script src="../static/assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="../static/assets/smoothscroll/smooth-scroll.js"></script>
+<script src="../static/assets/dropdown/js/nav-dropdown.js"></script>
+<script src="../static/assets/dropdown/js/navbar-dropdown.js"></script>
+<script src="../static/assets/touchswipe/jquery.touch-swipe.min.js"></script>
+<script src="../static/assets/tether/tether.min.js"></script>
+<script src="../static/assets/viewportchecker/jquery.viewportchecker.js"></script>
+<script src="../static/assets/mbr-flip-card/mbr-flip-card.js"></script>
+<script src="../static/assets/bootstrapcarouselswipe/bootstrap-carousel-swipe.js"></script>
+<script src="../static/assets/mbr-testimonials-slider/mbr-testimonials-slider.js"></script>
+<script src="../static/assets/mbr-clients-slider/mbr-clients-slider.js"></script>
+<script src="../static/assets/parallax/jarallax.min.js"></script>
+<script src="../static/assets/theme/js/script.js"></script>
+</body>
+
 </html>
